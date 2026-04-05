@@ -19,6 +19,35 @@
 
 Remediam Aegis is a production-ready **OWASP API Top 10 scanner**, **form security testing tool**, and **shadow API detection** platform built for CI/CD workflows.
 
+## Product Snapshot
+
+### Problem
+
+Most small and mid-size applications do not have practical, always-on security monitoring.
+
+### Solution
+
+Remediam Aegis provides:
+- Real-time monitoring workflows
+- Threat detection heuristics
+- Logs, findings, and alert-ready reports
+
+### Features
+
+- Real-time API and form attack-surface checks
+- Threat detection for risky endpoint exposure and secret leaks
+- Security logs, severity summaries, and risk-scored reports
+
+### Demo
+
+See the visual demos below:
+- CLI run preview
+- Architecture snapshot
+
+### Future Vision
+
+Evolve Remediam Aegis into a full SaaS security platform with multi-tenant dashboards, scheduled scans, and team-based alerting.
+
 ## Demo and Screenshots
 
 ### CLI Output Preview
