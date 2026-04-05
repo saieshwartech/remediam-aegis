@@ -1,5 +1,6 @@
-# 🚀 Remediam Aegis
-### AI-powered threat detection, behavior analysis, and automated remediation
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0B132B,100:1C2541&text=Remediam%20Aegis&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=Open%20Source%20API%20Security%20Scanner%20for%20Modern%20Teams&descAlignY=60&descSize=16" alt="Remediam Aegis banner" />
+</p>
 
 [![CI](https://img.shields.io/github/actions/workflow/status/SaieshwarTech/remediam-aegis/security-scan.yml?branch=main&label=CI)](https://github.com/SaieshwarTech/remediam-aegis/actions)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
