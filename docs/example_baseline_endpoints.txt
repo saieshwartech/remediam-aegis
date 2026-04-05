@@ -1,0 +1,5 @@
+# Known API endpoints
+/health
+/login
+/users
+/orders
