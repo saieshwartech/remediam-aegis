@@ -1,214 +1,169 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0B132B,100:1C2541&text=Remediam%20Aegis&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=Open%20Source%20API%20Security%20Scanner%20for%20Modern%20Teams&descAlignY=60&descSize=16" alt="Remediam Aegis banner" />
-</p>
+# 🚀 Remediam Aegis
+### AI-powered threat detection, behavior analysis, and automated remediation
 
-<p align="center">
-  <a href="https://github.com/SaieshwarTech/remediam-aegis/actions/workflows/security-scan.yml"><img src="https://img.shields.io/github/actions/workflow/status/SaieshwarTech/remediam-aegis/security-scan.yml?branch=main&label=Security%20Scan&logo=githubactions&logoColor=white" alt="GitHub Action" /></a>
-  <a href="https://github.com/SaieshwarTech/remediam-aegis"><img src="https://img.shields.io/github/stars/SaieshwarTech/remediam-aegis?style=flat&logo=github" alt="GitHub stars" /></a>
-  <a href="https://github.com/SaieshwarTech/remediam-aegis/network/members"><img src="https://img.shields.io/github/forks/SaieshwarTech/remediam-aegis?style=flat&logo=github" alt="GitHub forks" /></a>
-  <a href="https://github.com/SaieshwarTech/remediam-aegis/issues"><img src="https://img.shields.io/github/issues/SaieshwarTech/remediam-aegis" alt="GitHub issues" /></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License" /></a>
-  <img src="https://img.shields.io/badge/Python-3.10%2B-blue" alt="Python" />
-  <img src="https://img.shields.io/badge/OWASP-API%20Top%2010-red" alt="OWASP API Top 10" />
-  <img src="https://img.shields.io/badge/AppSec-Developer%20First-orange" alt="AppSec" />
-</p>
+[![CI](https://img.shields.io/github/actions/workflow/status/SaieshwarTech/remediam-aegis/security-scan.yml?branch=main&label=CI)](https://github.com/SaieshwarTech/remediam-aegis/actions)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](#)
+[![Issues](https://img.shields.io/github/issues/SaieshwarTech/remediam-aegis)](https://github.com/SaieshwarTech/remediam-aegis/issues)
+[![Stars](https://img.shields.io/github/stars/SaieshwarTech/remediam-aegis)](https://github.com/SaieshwarTech/remediam-aegis/stargazers)
+[![Forks](https://img.shields.io/github/forks/SaieshwarTech/remediam-aegis)](https://github.com/SaieshwarTech/remediam-aegis/network/members)
+[![OWASP API Top 10](https://img.shields.io/badge/OWASP-API%20Top%2010-red)](#)
 
-# Remediam Aegis
+Remediam Aegis is an AI-powered security and monitoring system that detects threats, analyzes system behavior, and provides automated remediation guidance.
+It helps teams move from reactive incident handling to proactive, real-time defense with clear, actionable insights.
 
-**Remediam Aegis — Open Source API Security Scanner** for modern engineering teams.
+## 🧠 Problem Statement
 
-Remediam Aegis is a production-ready **OWASP API Top 10 scanner**, **form security testing tool**, and **shadow API detection** platform built for CI/CD workflows.
+Most teams, especially startups and SMBs, lack practical 24/7 security monitoring.
+Logs are noisy, alerts are fragmented across tools, and incidents are discovered too late.
+Traditional setups are expensive, complex, and hard to operationalize for lean engineering teams.
 
-## Product Snapshot
+## 💡 Solution
 
-### Problem
+Aegis provides an integrated security workflow:
 
-Most small and mid-size applications do not have practical, always-on security monitoring.
+- Ingest telemetry from APIs, services, and logs
+- Detect suspicious behavior using rule-based + AI-assisted analysis
+- Prioritize threats with risk scoring
+- Trigger alerts and suggest or execute safe remediation steps
 
-### Solution
+This gives teams one product for detection, triage, and first-response automation.
 
-Remediam Aegis provides:
-- Real-time monitoring workflows
-- Threat detection heuristics
-- Logs, findings, and alert-ready reports
+## ⚙️ Features
 
-### Features
+- Real-time threat detection across API and system activity
+- AI-assisted log and behavior analysis for anomaly identification
+- Severity-based alerting via email, Slack, and webhook-ready channels
+- Automated remediation workflows with policy guardrails
+- Risk scoring and incident summaries for fast triage
+- JSON and Markdown reporting for audits and compliance
+- API-first architecture for easy CI/CD and SOC integration
 
-- Real-time API and form attack-surface checks
-- Threat detection for risky endpoint exposure and secret leaks
-- Security logs, severity summaries, and risk-scored reports
+## 🏗️ Architecture Overview
 
-### Demo
+Aegis follows a modular security pipeline:
 
-See the visual demos below:
-- CLI run preview
-- Architecture snapshot
+1. Signal ingestion from logs, APIs, and runtime events
+2. Detection engine combines security rules + AI analysis
+3. Risk engine scores and prioritizes incidents
+4. Alert service routes notifications
+5. Remediation engine runs approved response actions
+6. API/dashboard layer exposes visibility and controls
 
-### Future Vision
-
-Evolve Remediam Aegis into a full SaaS security platform with multi-tenant dashboards, scheduled scans, and team-based alerting.
-
-## Demo and Screenshots
-
-### CLI Output Preview
-
-![Remediam Aegis CLI Preview](./docs/media/aegis-cli-preview.svg)
-
-### Architecture Snapshot
-
-![Remediam Aegis Architecture](./docs/media/aegis-architecture.svg)
-
-## SEO Focus Keywords
-
-- API security scanner
-- OWASP API Top 10 scanner
-- form security testing tool
-- open source AppSec scanner
-- shadow API detection
-- API attack surface management
-- developer-first security scanner
-- CI/CD API security checks
-
-## Why Remediam Aegis
-
-- Gives fast, practical API and form risk visibility
-- Works as both CLI and FastAPI service
-- Produces management-friendly Markdown and JSON reports
-- Designed for GitHub Actions and pull-request security workflows
-- Safe by design: non-destructive HTTP checks
-
-## Core Capabilities
-
-1. OpenAPI endpoint discovery (`json` / `yaml`)
-2. HTML form discovery crawler
-3. HTTP security headers audit
-4. Auth exposure heuristics for sensitive paths
-5. HTTP method exposure checks via `OPTIONS`
-6. Secret and token leak pattern detection
-7. Shadow API drift checks against baseline inventory
-8. Weighted risk scoring + severity summary
-9. JSON and Markdown report generation
-10. API mode (`FastAPI`) + CLI mode
-
-## Architecture
-
-```text
-Input Target (Base URL + OpenAPI + Baseline)
-        |
-        v
-Discovery Layer (OpenAPI parser + Form crawler)
-        |
-        v
-Rule Engine (Headers/Auth/Methods/Secrets/Drift)
-        |
-        v
-Scoring Layer (Severity summary + Risk score)
-        |
-        v
-Reports (JSON + Markdown) + CI Artifact Upload
+```mermaid
+flowchart LR
+A[Telemetry Sources] --> B[Monitoring and Ingestion]
+B --> C[Detection Engine]
+C --> D[Risk Scoring]
+D --> E[Alerting]
+D --> F[Auto-Remediation]
+E --> G[Dashboard and API]
+F --> G
 ```
 
-More details: [ARCHITECTURE.md](./docs/ARCHITECTURE.md)
+Structure docs:
+- [Modular package plan](./aegis/README.md)
+- [Project structure and scaling](./docs/PROJECT_STRUCTURE.md)
 
-## Quick Start
+## 📸 Demo Section
+
+### CLI Demo
+![CLI Demo](./docs/media/aegis-cli-preview.svg)
+
+### Architecture Snapshot
+![Architecture Demo](./docs/media/aegis-architecture.svg)
+
+### Dashboard Screenshot Placeholder
+Add screenshot at: `./docs/media/demo-dashboard.png`
+
+### Incident Timeline Placeholder
+Add screenshot at: `./docs/media/demo-incidents.png`
+
+## 🧪 Example Use Cases
+
+- Detect suspicious login bursts and trigger IP block remediation
+- Flag leaked tokens/keys in API responses or logs
+- Identify shadow endpoints not present in approved inventory
+- Alert on risky API method exposure (`PUT`, `PATCH`, `DELETE`)
+- Generate daily security posture reports for engineering leadership
+
+## 🛠️ Tech Stack
+
+- Backend: Python, FastAPI
+- Detection Layer: Rule engine + AI-assisted analyzers
+- Monitoring: HTTP/API probes + structured log analysis
+- Alerting: Email/Slack/Webhooks (extensible)
+- Data/Storage: JSON reports (extensible to PostgreSQL/Redis)
+- CI/CD: GitHub Actions
+
+## 🚀 Installation Guide
+
+### 1) Clone
+
+```bash
+git clone https://github.com/SaieshwarTech/remediam-aegis.git
+cd remediam-aegis
+```
+
+### 2) Setup Environment
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
+
+### 3) Run CLI Scan
+
+```bash
 python3 -m core.cli scan \
   --base-url https://example.com \
   --openapi-url https://example.com/openapi.json \
   --baseline-file docs/example_baseline_endpoints.txt
 ```
 
-Generated artifacts:
-- `reports/scan_<id>.json`
-- `reports/scan_<id>.md`
-
-## CLI Usage
-
-```bash
-python3 -m core.cli scan \
-  --base-url https://example.com \
-  --openapi-file docs/openapi_example.yaml \
-  --baseline-file docs/example_baseline_endpoints.txt \
-  --timeout 8 \
-  --max-endpoints-to-probe 30
-```
-
-## API Usage
-
-Start server:
+### 4) Run API Server
 
 ```bash
 uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
 ```
 
-Health check:
+### 5) Health Check
 
 ```bash
 curl http://localhost:8080/health
 ```
 
-Trigger scan:
+## 📈 Future Roadmap
 
-```bash
-curl -X POST http://localhost:8080/scan \
-  -H "Content-Type: application/json" \
-  -d '{
-    "base_url": "https://example.com",
-    "openapi_url": "https://example.com/openapi.json",
-    "max_endpoints_to_probe": 25
-  }'
-```
+- Multi-tenant architecture for SaaS deployment
+- SIEM integrations (Splunk, Elastic, Datadog)
+- Threat intelligence feed enrichment
+- SARIF output and policy packs for security pipelines
+- RBAC, audit trails, and compliance modules
+- Remediation marketplace with pluggable responders
 
-## GitHub Actions Integration
+Business vision:
+- [SaaS vision](./docs/SAAS_VISION.md)
+- [Demo and wow-factor ideas](./docs/DEMO_IDEAS.md)
 
-Workflow file: [security-scan.yml](./.github/workflows/security-scan.yml)
+## 🤝 Contribution Guide
 
-Required repository variable:
-- `SCAN_BASE_URL`
+Contributions are welcome.
 
-Optional variable:
-- `SCAN_OPENAPI_URL`
+1. Fork the repository
+2. Create a feature branch
+3. Add code and tests
+4. Open a PR with clear context and impact
 
-The workflow uploads security reports as build artifacts.
+Focus areas:
 
-## Project Structure
-
-```text
-remediam-aegis/
-├── app/                  # FastAPI service
-├── checks/               # Security rule checks
-├── core/                 # Discovery, engine, reporting, CLI
-├── docs/                 # Architecture and baseline examples
-├── scripts/              # Demo helpers
-├── tests/                # Unit tests
-├── reports/              # Generated scan reports
-└── .github/workflows/    # CI security scanning workflow
-```
-
-## Safety and Legal
-
-Remediam Aegis is intended for authorized defensive security testing only.
-Do not scan or probe infrastructure without explicit permission.
-
-## Roadmap
-
-- OpenAPI auth schema-aware checks
-- JWT validation quality rules
-- API abuse simulation profiles (safe mode)
-- SARIF output for code-scanning pipelines
-- Multi-target scheduled scanning
-
-## Contributing
-
-PRs are welcome. Please focus on:
-- High-signal, low-noise rules
-- Safe-by-default scanning behavior
+- High-signal detections with low false positives
+- Secure-by-default remediation actions
 - Clear evidence and remediation guidance
 
-## License
+See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+## 📜 License
 
 MIT License. See [LICENSE](./LICENSE).
