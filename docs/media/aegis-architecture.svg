@@ -1,0 +1,43 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B132B"/>
+      <stop offset="1" stop-color="#1C2541"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#23395D"/>
+      <stop offset="1" stop-color="#2E4A7D"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" rx="24" fill="url(#bg)"/>
+  <text x="70" y="78" fill="#EAF2FF" font-size="42" font-family="Arial, sans-serif" font-weight="700">Remediam Aegis Architecture</text>
+  <text x="70" y="112" fill="#A8C1FF" font-size="20" font-family="Arial, sans-serif">Open Source API Security Scanner | OWASP API Top 10 Scanner | Shadow API Detection</text>
+
+  <rect x="70" y="170" width="250" height="95" rx="14" fill="url(#card)" stroke="#7FA5FF"/>
+  <text x="95" y="210" fill="#FFFFFF" font-size="24" font-family="Arial, sans-serif" font-weight="700">Input</text>
+  <text x="95" y="238" fill="#DCE8FF" font-size="18" font-family="Arial, sans-serif">Base URL + OpenAPI</text>
+
+  <rect x="370" y="170" width="250" height="95" rx="14" fill="url(#card)" stroke="#7FA5FF"/>
+  <text x="395" y="210" fill="#FFFFFF" font-size="24" font-family="Arial, sans-serif" font-weight="700">Discovery</text>
+  <text x="395" y="238" fill="#DCE8FF" font-size="18" font-family="Arial, sans-serif">Endpoints + Forms</text>
+
+  <rect x="670" y="170" width="250" height="95" rx="14" fill="url(#card)" stroke="#7FA5FF"/>
+  <text x="695" y="210" fill="#FFFFFF" font-size="24" font-family="Arial, sans-serif" font-weight="700">Rule Engine</text>
+  <text x="695" y="238" fill="#DCE8FF" font-size="18" font-family="Arial, sans-serif">Headers/Auth/Secrets</text>
+
+  <rect x="970" y="170" width="160" height="95" rx="14" fill="url(#card)" stroke="#7FA5FF"/>
+  <text x="995" y="210" fill="#FFFFFF" font-size="24" font-family="Arial, sans-serif" font-weight="700">Score</text>
+  <text x="995" y="238" fill="#DCE8FF" font-size="18" font-family="Arial, sans-serif">0-100</text>
+
+  <rect x="190" y="360" width="820" height="250" rx="16" fill="#0D1B36" stroke="#4C6FB5"/>
+  <text x="225" y="415" fill="#FFFFFF" font-size="30" font-family="Arial, sans-serif" font-weight="700">Outputs</text>
+  <text x="225" y="458" fill="#DCE8FF" font-size="22" font-family="Arial, sans-serif">• JSON & Markdown Reports</text>
+  <text x="225" y="495" fill="#DCE8FF" font-size="22" font-family="Arial, sans-serif">• CI Artifacts in GitHub Actions</text>
+  <text x="225" y="532" fill="#DCE8FF" font-size="22" font-family="Arial, sans-serif">• FastAPI + CLI for DevSecOps Pipelines</text>
+
+  <line x1="320" y1="217" x2="370" y2="217" stroke="#9FBCFF" stroke-width="4"/>
+  <line x1="620" y1="217" x2="670" y2="217" stroke="#9FBCFF" stroke-width="4"/>
+  <line x1="920" y1="217" x2="970" y2="217" stroke="#9FBCFF" stroke-width="4"/>
+  <line x1="1050" y1="265" x2="1050" y2="360" stroke="#9FBCFF" stroke-width="4"/>
+</svg>

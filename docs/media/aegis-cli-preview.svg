@@ -1,0 +1,22 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="560" rx="20" fill="#0A0F1F"/>
+  <rect x="24" y="24" width="1152" height="512" rx="14" fill="#121B34" stroke="#2E3F6E"/>
+
+  <circle cx="60" cy="50" r="8" fill="#FF5F57"/>
+  <circle cx="84" cy="50" r="8" fill="#FEBB2E"/>
+  <circle cx="108" cy="50" r="8" fill="#28C840"/>
+
+  <text x="145" y="57" fill="#BFD1FF" font-size="18" font-family="Consolas, monospace">remediam-aegis terminal preview</text>
+
+  <text x="48" y="105" fill="#A6C1FF" font-size="22" font-family="Consolas, monospace">$ python -m core.cli scan --base-url https://example.com --openapi-url https://example.com/openapi.json</text>
+  <text x="48" y="150" fill="#DCE8FF" font-size="21" font-family="Consolas, monospace">Scan complete: 7f53a2c1d9ab</text>
+  <text x="48" y="186" fill="#DCE8FF" font-size="21" font-family="Consolas, monospace">Risk score: 64/100</text>
+  <text x="48" y="222" fill="#DCE8FF" font-size="21" font-family="Consolas, monospace">JSON report: reports/scan_7f53a2c1d9ab.json</text>
+  <text x="48" y="258" fill="#DCE8FF" font-size="21" font-family="Consolas, monospace">Markdown report: reports/scan_7f53a2c1d9ab.md</text>
+
+  <rect x="48" y="305" width="1104" height="190" rx="12" fill="#0C1530" stroke="#2B3C69"/>
+  <text x="72" y="347" fill="#8AB4FF" font-size="20" font-family="Consolas, monospace">Summary</text>
+  <text x="72" y="382" fill="#DCE8FF" font-size="19" font-family="Consolas, monospace">Critical: 0 | High: 2 | Medium: 2 | Low: 1</text>
+  <text x="72" y="417" fill="#DCE8FF" font-size="19" font-family="Consolas, monospace">Top finding: Potential unauthenticated sensitive endpoint</text>
+  <text x="72" y="452" fill="#DCE8FF" font-size="19" font-family="Consolas, monospace">Recommendation: Enforce authentication + object-level authorization</text>
+</svg>

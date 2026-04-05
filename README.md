@@ -19,6 +19,16 @@
 
 Remediam Aegis is a production-ready **OWASP API Top 10 scanner**, **form security testing tool**, and **shadow API detection** platform built for CI/CD workflows.
 
+## Demo and Screenshots
+
+### CLI Output Preview
+
+![Remediam Aegis CLI Preview](./docs/media/aegis-cli-preview.svg)
+
+### Architecture Snapshot
+
+![Remediam Aegis Architecture](./docs/media/aegis-architecture.svg)
+
 ## SEO Focus Keywords
 
 - API security scanner
